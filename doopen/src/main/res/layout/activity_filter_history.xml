@@ -1,0 +1,66 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F8FF"
+    android:orientation="vertical"
+    tools:context=".Filter_history_Activity" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/header_bg_color_xulik" >
+
+        <Button
+            android:id="@+id/xulik_fliter_history_result"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="14dp"
+            android:background="@drawable/result" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="滤芯复位历史"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/xulik_chore_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView4"
+            android:layout_alignBottom="@+id/textView4"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:background="@null"
+            android:text="清空"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <in.srain.cube.views.ptr.PtrFrameLayout
+        xmlns:cube_ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/material_style_ptr_frame_xuliki_lvxin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        cube_ptr:ptr_duration_to_close="300"
+        cube_ptr:ptr_duration_to_close_header="2000"
+        cube_ptr:ptr_keep_header_when_refresh="true"
+        cube_ptr:ptr_pull_to_fresh="false"
+        cube_ptr:ptr_ratio_of_header_height_to_refresh="1.2"
+        cube_ptr:ptr_resistance="1.7" >
+
+        <cn.air.doopen.view.mylistview.SlideListView2
+            android:id="@+id/personage_hua_listview_xulik"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/qianhuise"
+            android:dividerHeight="1px" >
+        </cn.air.doopen.view.mylistview.SlideListView2>
+    </in.srain.cube.views.ptr.PtrFrameLayout>
+
+</LinearLayout>

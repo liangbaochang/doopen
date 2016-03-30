@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/empty_cart_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <RelativeLayout
+        android:id="@+id/top_relative"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/qianhuise" >
+
+        <Button
+            android:id="@+id/seting_result_seting"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/result" />
+
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:padding="10.0dip"
+            android:singleLine="true"
+            android:text="设置"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/black" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top_relative"
+        android:fadingEdge="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:paddingTop="20.0dip" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp" >
+
+                <TableLayout
+                    android:id="@+id/MorePageTableLayout_Favorite"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:shrinkColumns="0"
+                    android:stretchColumns="0" >
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/shenhuise" />
+
+                    <TableRow
+                        android:id="@+id/more_page_row0"
+                        android:layout_width="wrap_content"
+                        android:background="@drawable/back_change"
+                        android:clickable="true"
+                        android:paddingBottom="5.0dip"
+                        android:paddingTop="5.0dip" >
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:drawablePadding="10.0dip"
+                            android:drawableRight="@drawable/table_arrow"
+                            android:text="我的账户"
+                            android:textColor="@drawable/btn_text"
+                            android:textSize="16.0sp" />
+                    </TableRow>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/shenhuise" />
+
+                    <TableRow
+                        android:id="@+id/update_pwd"
+                        android:layout_width="wrap_content"
+                        android:background="@drawable/back_change"
+                        android:clickable="true"
+                        android:paddingBottom="5.0dip"
+                        android:paddingTop="5.0dip" >
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:drawablePadding="10.0dip"
+                            android:drawableRight="@drawable/table_arrow"
+                            android:text="修改密码"
+                            android:textColor="@drawable/btn_text"
+                            android:textSize="16.0sp" />
+                    </TableRow>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/shenhuise" />
+                </TableLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp" >
+
+                <TableLayout
+                    android:id="@+id/MorePageTableLayout_debug"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:shrinkColumns="0"
+                    android:stretchColumns="0" >
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/shenhuise" />
+
+                    <TableRow
+                        android:id="@+id/more_page_debug"
+                        android:layout_width="fill_parent"
+                        android:background="@drawable/back_change"
+                        android:clickable="true"
+                        android:paddingBottom="5.0dip"
+                        android:paddingTop="5.0dip" >
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:drawablePadding="10.0dip"
+                            android:drawableRight="@drawable/table_arrow"
+                            android:text="调试信息"
+                            android:textColor="@drawable/btn_text"
+                            android:textSize="16.0sp" />
+                    </TableRow>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/shenhuise" />
+                </TableLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <Button
+                    android:id="@+id/button1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/smssdk_btn_out_red"
+                    android:text="退出登录"
+                    android:textColor="#ffffff" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/top_relative"
+        android:background="@color/shenhuise" />
+
+</RelativeLayout>

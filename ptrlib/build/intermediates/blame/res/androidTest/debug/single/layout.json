@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "H:\\demo\\doopen\\ptrlib\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\cube_ptr_simple_loading.xml",
+        "source": "H:\\demo\\doopen\\ptrlib\\build\\intermediates\\bundles\\debug\\res\\layout\\cube_ptr_simple_loading.xml"
+    },
+    {
+        "merged": "H:\\demo\\doopen\\ptrlib\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\cube_ptr_classic_default_header.xml",
+        "source": "H:\\demo\\doopen\\ptrlib\\build\\intermediates\\bundles\\debug\\res\\layout\\cube_ptr_classic_default_header.xml"
+    }
+]

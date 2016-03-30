@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/birthday"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/btn_datetime_sure"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="20dp"
+            android:background="@color/white"
+            android:text="完成"
+            android:textColor="#228CC8" />
+
+        <View
+            android:id="@+id/imageView1"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/shenhuise" />
+
+        <LinearLayout
+            android:id="@+id/timePicker1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal" >
+
+            <cn.air.doopen.view.wheelview.WheelView
+                android:id="@+id/year"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <cn.air.doopen.view.wheelview.WheelView
+                android:id="@+id/month"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <cn.air.doopen.view.wheelview.WheelView
+                android:id="@+id/day"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

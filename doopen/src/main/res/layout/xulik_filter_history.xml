@@ -1,0 +1,88 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F8FF"
+    android:orientation="horizontal"
+    android:paddingRight="-100dp" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:columnCount="1"
+                android:padding="10dp" >
+
+                <TextView
+                    android:id="@+id/filter_id"
+                    android:layout_column="0"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_row="1"
+                    android:text="12"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/filter_name"
+                    android:layout_column="0"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="-200dp"
+                    android:layout_row="1"
+                    android:text="第二级滤芯"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/filter_time"
+                    android:layout_column="0"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="100dp"
+                    android:layout_row="1"
+                    android:text="2015-04-02"
+                    android:textColor="@color/black" />
+            </GridLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/shenhuise" >
+            </View>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llayout_right"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="#B9C1CE" >
+
+            <RelativeLayout
+                android:id="@+id/dev_msg_refuse_air"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:background="#E53C37"
+                android:clickable="true" >
+
+                <TextView
+                    android:id="@+id/refuse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:text="删除"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

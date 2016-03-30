@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- drop down list header font color -->
+    <color name="drop_down_list_header_font_color">#000000</color>
+    <!-- drop down list header second font color -->
+    <color name="drop_down_list_header_second_font_color">#000000</color>
+    <!-- drop down list footer font color -->
+    <color name="drop_down_list_footer_font_color">#000000</color>
+    <color name="header_bg_color">#77A9E0</color>
+    <color name="header_bg_color_xulik">#00CCFF</color>
+    <color name="header_font_color">#ffffff</color>
+    <color name="result_view">#b0000000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+    <color name="white">#ffffffff</color>
+    <color name="black">#ff000000</color>
+    <color name="lucency">#00000000</color>
+    <color name="drap_bar_word_color">#ff3e7ec8</color>
+    <color name="gray">#ff888888</color>
+    <color name="blue">#ff270cf7</color>
+    <color name="update_blue">#ff3e81c8</color>
+    <color name="blueness">#5AC3D6</color>
+    <color name="shenhuise">#9D9D9D</color>
+    <color name="qianhaise">#4f4f4f</color>
+    <color name="haiyibj">#839DD0</color>
+    <color name="qianhuise">#F0F0F0</color>
+    <color name="transparent">#00000000</color>
+    <color name="bantouming">#80ffffff</color>
+    <color name="bantouming2">#e0000000</color>
+    <color name="blur_bg">#FFFAF0</color>
+    <color name="grey">#808080</color>
+    <color name="right_bg">#696969</color>
+    <color name="viewfinder_laser">#ffcc0000</color>
+
+    <drawable name="file_list_item_press">#ff5b544d</drawable>
+    <drawable name="file_list_item_normal">#ff787470</drawable>
+
+    <color name="province_line_border">#00ff00</color>
+    <color name="rippelColor">#00ff00</color>
+    <color name="Blue">#00ff00</color>
+    <color name="air_bj">#00ff00</color>
+    <color name="header_bg_common">#00ff00</color>
+    <color name="title_txt_color">#00ff00</color>
+    <color name="circle_color">#00ff00</color>
+    <color name="ring_color">#00ff00</color>
+    <color name="geen_color">#00ff00</color>
+    <color name="jacinth">#E16826</color>
+
+</resources>

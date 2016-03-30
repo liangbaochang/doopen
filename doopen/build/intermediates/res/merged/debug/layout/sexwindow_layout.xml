@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sexindow_reiative"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="186dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@color/qianhuise" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_above="@+id/pickview_sex"
+            android:layout_alignParentLeft="true"
+            android:background="@color/shenhuise" />
+
+        <Button
+            android:id="@+id/sexwindow_btn"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_above="@+id/imageView1"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:background="@color/qianhuise"
+            android:text="完成"
+            android:textColor="#228CC8" />
+
+        <cn.air.doopen.view.PickerView
+            android:id="@+id/pickview_sex"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true" />
+    </RelativeLayout>
+
+</RelativeLayout>

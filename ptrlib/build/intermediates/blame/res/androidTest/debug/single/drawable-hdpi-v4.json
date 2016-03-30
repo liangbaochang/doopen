@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "H:\\demo\\doopen\\ptrlib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-hdpi-v4\\sun.png",
+        "source": "H:\\demo\\doopen\\ptrlib\\build\\intermediates\\bundles\\debug\\res\\drawable-hdpi-v4\\sun.png"
+    },
+    {
+        "merged": "H:\\demo\\doopen\\ptrlib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-hdpi-v4\\sky.png",
+        "source": "H:\\demo\\doopen\\ptrlib\\build\\intermediates\\bundles\\debug\\res\\drawable-hdpi-v4\\sky.png"
+    },
+    {
+        "merged": "H:\\demo\\doopen\\ptrlib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-hdpi-v4\\buildings.png",
+        "source": "H:\\demo\\doopen\\ptrlib\\build\\intermediates\\bundles\\debug\\res\\drawable-hdpi-v4\\buildings.png"
+    }
+]

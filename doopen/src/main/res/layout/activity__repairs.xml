@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="#6C8BC7" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="101dp"
+                android:text="设备故障报修"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/white"
+                android:typeface="serif" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="21dp"
+                android:layout_toLeftOf="@+id/textView1"
+                android:src="@drawable/air_duoopen_login_true" />
+
+            <Button
+                android:id="@+id/air_repairs_return"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/result" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingTop="20dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="称呼:"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/qianhaise" />
+
+            <EditText
+                android:id="@+id/air_repairs_name"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_margin="15dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/login_edit_normal"
+                android:ems="5"
+                android:hint="名字"
+                android:inputType="textMultiLine"
+                android:maxLines="5"
+                android:paddingBottom="5dp"
+                android:textColorHint="@color/qianhuise" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="手机:"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/qianhaise" />
+
+            <EditText
+                android:id="@+id/air_repairs_phone"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_margin="15dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/login_edit_normal"
+                android:ems="5"
+                android:hint="可以联系到您的手机号码"
+                android:inputType="number"
+                android:maxLines="5"
+                android:paddingBottom="5dp"
+                android:textColorHint="@color/qianhuise" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="故障:"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/qianhaise" />
+
+            <EditText
+                android:id="@+id/air_repairs_fault"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_margin="15dp"
+                android:background="@drawable/login_edit_normal"
+                android:ems="5"
+                android:hint="描述设备出现的故障"
+                android:inputType="textMultiLine"
+                android:maxLines="5"
+                android:paddingBottom="60dp"
+                android:textColorHint="@color/qianhuise" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/air_site_text"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="10dp"
+                android:text="城市:"
+                android:textColor="@color/qianhaise"
+                android:textSize="17dp" />
+
+            <TextView
+                android:id="@+id/air_myuser_site"
+                android:layout_width="168dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="15dp"
+                android:layout_weight="0.49"
+                android:background="@null"
+                android:ems="10"
+                android:text="北京东城区"
+                android:textColor="@color/shenhuise"
+                android:textSize="17dp" >
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="25dp"
+                android:background="@drawable/table_arrow"
+                android:textColor="@drawable/btn_text"
+                android:textSize="12.0sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="地址:"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/qianhaise" />
+
+            <EditText
+                android:id="@+id/air_repairs_site"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_margin="15dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/login_edit_normal"
+                android:ems="5"
+                android:hint="请填写详细的邮寄地址"
+                android:inputType="textMultiLine"
+                android:maxLines="5"
+                android:paddingBottom="30dp"
+                android:textColorHint="@color/qianhuise" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/air_repairs_sumbit"
+            style="?android:textAppearanceSmall"
+            android:layout_width="191dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="#6C8BC7"
+            android:text="提交"
+            android:textColor="#ffffff"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</ScrollView>

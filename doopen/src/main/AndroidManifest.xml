@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cn.air.doopen.hy"
+    android:versionCode="7"
+    android:versionName="2.4.5" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.ACCESS_CHECKIN_PROPERTIES" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.MODIFY_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <!-- 蓝牙分享所需的权限 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <application
+        android:name="cn.air.doopen.hyapp.MyApp"
+        android:allowBackup="true"
+        android:icon="@drawable/air_log"
+        android:label="@string/app_name"
+        android:logo="@drawable/air_log"
+        android:persistent="true"
+        android:theme="@android:style/Theme.Holo.Light.NoActionBar" >
+        <activity
+            android:name="cn.air.doopen.hy.StartActivity"
+            android:configChanges="locale"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="cn.air.doopen.hy.personage.LoginActivity"
+            android:configChanges="locale"
+            android:finishOnTaskLaunch="false"
+            android:label="@string/title_activity_login"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateVisible" >
+        </activity>
+        <activity
+            android:name="cn.air.doopen.hy.device_control.WaterActivity_devid"
+            android:configChanges="orientation|keyboardHidden|locale"
+            android:label="@string/title_activity_ledctrl"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".DevListActivity" />
+        </activity>
+        <activity
+            android:name="cn.air.doopen.hy.device_control.WaterActivity"
+            android:configChanges="locale"
+            android:label="@string/title_activity_ledctrl"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".DevListActivity" />
+        </activity>
+
+        <service
+            android:name="cn.air.doopen.socket.TcpCommSerivce"
+            android:enabled="true" >
+        </service>
+
+        <receiver android:name="cn.air.doopen.config.LightWidget" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/light_widget_provider" />
+        </receiver>
+
+        <activity
+            android:name="cn.air.doopen.hy.MainActivity"
+            android:configChanges="locale"
+            android:label="@string/title_activity_share_dev_user"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.air.doopen.hy.MipcaActivityCapture"
+            android:configChanges="locale"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="cn.air.doopen.wifi.WifiListActivity"
+            android:configChanges="locale"
+            android:label="@string/title_activity_wifi_list"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.air.doopen.wifi.WifiActivity"
+            android:configChanges="locale"
+            android:label="@string/title_activity_wifi"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.air.doopen.hy.dev.NewDevActivity"
+            android:configChanges="locale"
+            android:label="@string/title_activity_new_dev"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.air.doopen.hy.personage.RegisterActivity"
+            android:configChanges="locale"
+            android:label="@string/title_activity_register"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.air.doopen.hy.personage.SettingActivity"
+            android:configChanges="locale"
+            android:label="@string/title_activity_setting"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.air.doopen.hy.personage.AboutActivity"
+            android:configChanges="locale"
+            android:label="@string/title_activity_about"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.air.doopen.hy.personage.FeedbackActivity"
+            android:configChanges="locale"
+            android:label="@string/title_activity_feedback"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.air.doopen.hy.personage.UserCenterActivity"
+            android:configChanges="locale"
+            android:label="@string/title_activity_user_center"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+        <activity
+            android:name="cn.air.doopen.hy.unused.DebugSettingActivity"
+            android:configChanges="locale"
+            android:label="@string/title_activity_debug_setting"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.air.doopen.hy.share.ShareDevActivity"
+            android:configChanges="locale"
+            android:label="@string/title_activity_share_dev"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.air.doopen.hy.share.ShareDevUserActivity"
+            android:configChanges="locale"
+            android:label="@string/title_activity_share_dev_user"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.air.doopen.hy.share.UserMessageActivity"
+            android:configChanges="locale"
+            android:label="@string/title_activity_share_dev_user"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.air.doopen.hy.device_control.PurlingActivity"
+            android:configChanges="locale"
+            android:label="@string/title_activity_share_dev_user"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.air.doopen.hy.device_control.SweepActivity"
+            android:configChanges="locale"
+            android:label="@string/title_activity_share_dev_user"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.air.doopen.hy.device_control.water_control_tool.Water_setingActivity"
+            android:configChanges="locale"
+            android:label="@string/title_activity_water_seting"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.air.doopen.hy.device_control.water_control_tool.Upgrade_Water_Activity"
+            android:configChanges="locale"
+            android:label="@string/title_activity_upgrade__water_"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.air.doopen.hy.share.DevShareActivity"
+            android:configChanges="locale"
+            android:label="@string/title_activity_dev_share"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.air.doopen.hy.personage.UpdatePwdActivity"
+            android:configChanges="locale"
+            android:label="@string/title_activity_update_pwd"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.air.doopen.hy.share.QuickmarkActivity"
+            android:configChanges="locale"
+            android:label="@string/title_activity_quickmark"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.air.doopen.hy.personage.RestPwdActivity"
+            android:configChanges="locale"
+            android:label="@string/title_activity_rest_pwd"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.air.doopen.hy.device_control.DemonstrateActivity"
+            android:configChanges="locale"
+            android:label="@string/title_activity_rest_pwd"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.air.doopen.freagment.airA.AirAActivity"
+            android:configChanges="locale"
+            android:label="@string/title_activity_air_a"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="cn.air.doopen.hy.device_control.xulik.Xulik_WaterActivity"
+            android:configChanges="locale"
+            android:label="@string/title_activity_xulik__water"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.air.doopen.hy.device_control.xulik.Xulik_WaterActivity_devid"
+            android:configChanges="locale"
+            android:label="@string/title_activity_xulik__water"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.air.doopen.hy.device_control.xulik.Filter_details_Activity"
+            android:configChanges="locale"
+            android:label="@string/title_activity_filter_details_"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.air.doopen.hy.device_control.xulik.Filter_details_Activity_devid"
+            android:configChanges="locale"
+            android:label="@string/title_activity_filter_details_"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.air.doopen.hy.device_control.xulik.Filter_history_Activity"
+            android:configChanges="locale"
+            android:label="@string/title_activity_filter_history_"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.air.doopen.view.ShowadlogActivity"
+            android:configChanges="locale"
+            android:label="@string/title_activity_showadlog"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <receiver android:name="cn.air.doopen.Receiver.UpdateviewReceiver" >
+            <intent-filter>
+                <action android:name="cn.air.doopen.socket.TcpComm_anew" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="cn.air.doopen.Receiver.StateReceiver" >
+            <intent-filter>
+                <action android:name="cn.air.doopen.socket.TcpComm_offline" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="cn.air.doopen.Receiver.InentRecaiver" >
+            <intent-filter>
+                <action android:name="cn.air.doopen.socket.TcpComm_socket_msg" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="cn.air.doopen.wifi.LinkDevActivity"
+            android:configChanges="locale"
+            android:label="@string/title_activity_link_dev"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.air.doopen.wifi.DeployActivity"
+            android:configChanges="locale"
+            android:label="@string/title_activity_deploy"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+        <activity
+            android:name="cn.air.doopen.wifi.esptouch.activity.EsptouchActivity"
+            android:configChanges="locale"
+            android:label="@string/title_activity_esptouch"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.mob.tools.MobUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+            <intent-filter>
+                <data android:scheme="tencent1104950318" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!-- 微信分享回调 -->
+        <activity
+            android:name="cn.sharesdk.demo.wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <!-- 易信分享回调 -->
+        <activity
+            android:name="cn.air.doopen.hy.yxapi.YXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <!-- QQ客户端回调 -->
+        <activity
+            android:name="cn.sharesdk.tencent.qq.ResultReceiver"
+            android:launchMode="singleTask"
+            android:noHistory="true" >
+
+            <!--
+如果集成QQ分享，或者使用QQ客户端来进行QQ空间的分享，须要在此处添加一个对ACTION_VIEW
+事件的过滤器，其中的scheme是“tencent”前缀再开发者应用的加上appId。如果此过滤器不设置，
+则分享结束以后不能得到正确的回调
+
+
+
+
+
+
+
+            -->
+            <intent-filter android:priority="1000" >
+                <data android:scheme="tencent1104950318" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+        </activity>
+
+        <!-- 支付宝分享回调 -->
+        <activity
+            android:name="cn.air.doopen.hy.apshare.ShareEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="cn.air.doopen.freagment.airA._repairs_Activity"
+            android:label="@string/title_activity__repairs_" >
+        </activity>
+        <activity
+            android:name="cn.air.doopen.freagment.airA.Repair_List_Activity"
+            android:label="@string/title_activity_repair__list_" >
+        </activity>
+        <activity
+            android:name="cn.air.doopen.hy.Repair_scheduleActivity"
+            android:label="@string/title_activity_repair_schedule" >
+        </activity>
+    </application>
+
+</manifest>

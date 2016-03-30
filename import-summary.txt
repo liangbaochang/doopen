@@ -1,0 +1,101 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Manifest Merging:
+-----------------
+Your project uses libraries that provide manifests, and your Eclipse
+project did not explicitly turn on manifest merging. In Android Gradle
+projects, manifests are always merged (meaning that contents from your
+libraries' manifests will be merged into the app manifest. If you had
+manually copied contents from library manifests into your app manifest
+you may need to remove these for the app to build correctly.
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+From doopen:
+* .DS_Store
+* ._.DS_Store
+* ._doopen.apk
+* doopen.apk
+* doopen.iml
+* ic_launcher-web.png
+* proguard-project.txt
+From ptr-lib:
+* ptr-lib.iml
+From wheel:
+* wheel.iml
+
+Replaced Jars with Dependencies:
+--------------------------------
+The importer recognized the following .jar files as third party
+libraries and replaced them with Gradle dependencies instead. This has
+the advantage that more explicit version information is known, and the
+libraries can be updated automatically. However, it is possible that
+the .jar file in your project was of an older version than the
+dependency we picked, which could render the project not compileable.
+You can disable the jar replacement in the import wizard and try again:
+
+android-support-v4.jar => com.android.support:support-v4:18.0.0
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+In ptr-lib:
+* AndroidManifest.xml => ptrlib\src\main\AndroidManifest.xml
+* assets\ => ptrlib\src\main\assets
+* libs\clog-1.0.2-sources.jar => ptrlib\libs\clog-1.0.2-sources.jar
+* libs\clog-1.0.2.jar => ptrlib\libs\clog-1.0.2.jar
+* res\ => ptrlib\src\main\res\
+* src\ => ptrlib\src\main\java\
+In wheel:
+* AndroidManifest.xml => wheel\src\main\AndroidManifest.xml
+* assets\ => wheel\src\main\assets\
+* res\ => wheel\src\main\res\
+* src\ => wheel\src\main\java\
+In doopen:
+* AndroidManifest.xml => doopen\src\main\AndroidManifest.xml
+* assets\ => doopen\src\main\assets\
+* libs\afinal_0.5.1_bin.jar => doopen\libs\afinal_0.5.1_bin.jar
+* libs\core.jar => doopen\libs\core.jar
+* libs\MobLogCollector.jar => doopen\libs\MobLogCollector.jar
+* libs\MobTools.jar => doopen\libs\MobTools.jar
+* libs\nineoldandroids-2.4.0.jar => doopen\libs\nineoldandroids-2.4.0.jar
+* libs\ShareSDK-Core-2.6.3.jar => doopen\libs\ShareSDK-Core-2.6.3.jar
+* libs\ShareSDK-Email-2.6.3.jar => doopen\libs\ShareSDK-Email-2.6.3.jar
+* libs\ShareSDK-Facebook-2.6.3.jar => doopen\libs\ShareSDK-Facebook-2.6.3.jar
+* libs\ShareSDK-QQ-2.6.3.jar => doopen\libs\ShareSDK-QQ-2.6.3.jar
+* libs\ShareSDK-QZone-2.6.3.jar => doopen\libs\ShareSDK-QZone-2.6.3.jar
+* libs\ShareSDK-ShortMessage-2.6.3.jar => doopen\libs\ShareSDK-ShortMessage-2.6.3.jar
+* libs\ShareSDK-SinaWeibo-2.6.3.jar => doopen\libs\ShareSDK-SinaWeibo-2.6.3.jar
+* libs\ShareSDK-TencentWeibo-2.6.3.jar => doopen\libs\ShareSDK-TencentWeibo-2.6.3.jar
+* libs\ShareSDK-Twitter-2.6.3.jar => doopen\libs\ShareSDK-Twitter-2.6.3.jar
+* libs\ShareSDK-Wechat-2.6.3.jar => doopen\libs\ShareSDK-Wechat-2.6.3.jar
+* libs\ShareSDK-Wechat-Core-2.6.3.jar => doopen\libs\ShareSDK-Wechat-Core-2.6.3.jar
+* libs\ShareSDK-Wechat-Favorite-2.6.3.jar => doopen\libs\ShareSDK-Wechat-Favorite-2.6.3.jar
+* libs\ShareSDK-Wechat-Moments-2.6.3.jar => doopen\libs\ShareSDK-Wechat-Moments-2.6.3.jar
+* libs\xUtils-2.6.2.jar => doopen\libs\xUtils-2.6.2.jar
+* libs\zxing.jar => doopen\libs\zxing.jar
+* res\ => doopen\src\main\res\
+* src\ => doopen\src\main\java\
+* src\.define => doopen\src\main\resources\.define
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)

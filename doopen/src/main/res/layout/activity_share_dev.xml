@@ -1,0 +1,109 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/shate_dev_fen"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/qianhuise" >
+
+            <Button
+                android:id="@+id/dev_share_result"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignBaseline="@+id/textView1"
+                android:layout_alignBottom="@+id/textView1"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/result" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="@string/dev_share_text"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/black" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/shenhuise" />
+
+        <cn.air.doopen.widget.RoundImageView
+            android:id="@+id/Scan_image"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="25dp"
+            android:src="@drawable/happy_share" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:text="快来分享设备，和家人一起享受智能生活吧"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/shenhuise" />
+
+        <EditText
+            android:id="@+id/edt_operator_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded_edittext"
+            android:ems="10"
+            android:freezesText="true"
+            android:gravity="center_vertical"
+            android:hint="请输入需要分享的用户名"
+            android:padding="15dp"
+            android:paddingBottom="10dip"
+            android:paddingTop="10dip"
+            android:phoneNumber="true"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:textScaleX="1" />
+
+        <Button
+            android:id="@+id/share_true_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/smssdk_btn_enable"
+            android:text="邀请"
+            android:textColor="#fff" />
+
+        <Button
+            android:id="@+id/quick_btn"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/quick_selet_img" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:text="通过扫面二维码分享设备"
+            android:textColor="@color/shenhuise" />
+    </LinearLayout>
+
+</ScrollView>

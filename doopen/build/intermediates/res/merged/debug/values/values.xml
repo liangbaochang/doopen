@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer-array name="taskResultCount">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </integer-array>
+    <color name="Blue">#00ff00</color>
+    <color name="air_bj">#00ff00</color>
+    <color name="bantouming">#80ffffff</color>
+    <color name="bantouming2">#e0000000</color>
+    <color name="black">#ff000000</color>
+    <color name="blue">#ff270cf7</color>
+    <color name="blueness">#5AC3D6</color>
+    <color name="blur_bg">#FFFAF0</color>
+    <color name="circle_color">#00ff00</color>
+    <color name="drap_bar_word_color">#ff3e7ec8</color>
+    <color name="drop_down_list_footer_font_color">#000000</color>
+    <color name="drop_down_list_header_font_color">#000000</color>
+    <color name="drop_down_list_header_second_font_color">#000000</color>
+    <color name="geen_color">#00ff00</color>
+    <color name="gray">#ff888888</color>
+    <color name="grey">#808080</color>
+    <color name="haiyibj">#839DD0</color>
+    <color name="header_bg_color">#77A9E0</color>
+    <color name="header_bg_color_xulik">#00CCFF</color>
+    <color name="header_bg_common">#00ff00</color>
+    <color name="header_font_color">#ffffff</color>
+    <color name="jacinth">#E16826</color>
+    <color name="lucency">#00000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+    <color name="primary_material_light">#03a9f4</color>
+    <color name="province_line_border">#00ff00</color>
+    <color name="qianhaise">#4f4f4f</color>
+    <color name="qianhuise">#F0F0F0</color>
+    <color name="result_view">#b0000000</color>
+    <color name="right_bg">#696969</color>
+    <color name="ring_color">#00ff00</color>
+    <color name="rippelColor">#00ff00</color>
+    <color name="shenhuise">#9D9D9D</color>
+    <color name="title_txt_color">#00ff00</color>
+    <color name="transparent">#00000000</color>
+    <color name="update_blue">#ff3e81c8</color>
+    <color name="viewfinder_laser">#ffcc0000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="white">#ffffffff</color>
+    <declare-styleable name="CircleImageView"><attr format="dimension" name="border_width"/><attr format="color" name="border_color"/><attr format="boolean" name="border_overlay"/></declare-styleable>
+    <declare-styleable name="MyRadioButton"><attr format="dimension" name="drawableSize"/><attr format="reference" name="drawableTop"/><attr format="reference" name="drawableLeft"/><attr format="reference" name="drawableRight"/><attr format="reference" name="drawableBottom"/></declare-styleable>
+    <declare-styleable name="PtrClassicHeader"><attr format="integer" name="ptr_rotate_ani_time"/></declare-styleable>
+    <declare-styleable name="PtrFrameLayout"><attr format="reference" name="ptr_header"/><attr format="reference" name="ptr_content"/><attr format="float" name="ptr_resistance"/><attr format="float" name="ptr_ratio_of_header_height_to_refresh"/><attr format="integer" name="ptr_duration_to_close"/><attr format="integer" name="ptr_duration_to_close_header"/><attr format="boolean" name="ptr_pull_to_fresh"/><attr format="boolean" name="ptr_keep_header_when_refresh"/></declare-styleable>
+    <declare-styleable name="RippleBackground"><attr format="color" name="rb_color"/><attr format="dimension" name="rb_strokeWidth"/><attr format="dimension" name="rb_radius"/><attr format="integer" name="rb_duration"/><attr format="integer" name="rb_rippleAmount"/><attr format="float" name="rb_scale"/><attr format="enum" name="rb_type"><enum name="fillRipple" value="0"/><enum name="strokeRipple" value="1"/></attr></declare-styleable>
+    <declare-styleable name="TasksCompletedView"><attr format="dimension" name="radius"/><attr format="dimension" name="strokeWidth"/><attr format="color" name="circleColor"/><attr format="color" name="ringColor"/></declare-styleable>
+    <declare-styleable name="drop_down_list_attr"><attr format="boolean" name="isDropDownStyle"/><attr format="boolean" name="isOnBottomStyle"/><attr format="boolean" name="isAutoLoadOnBottom"/></declare-styleable>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="dp_1">1dp</dimen>
+    <dimen name="dp_10">10dp</dimen>
+    <dimen name="dp_100">100dip</dimen>
+    <dimen name="dp_11">11dp</dimen>
+    <dimen name="dp_12">12dp</dimen>
+    <dimen name="dp_13">13dp</dimen>
+    <dimen name="dp_14">14dp</dimen>
+    <dimen name="dp_15">15dp</dimen>
+    <dimen name="dp_16">16dp</dimen>
+    <dimen name="dp_17">17dp</dimen>
+    <dimen name="dp_18">18dp</dimen>
+    <dimen name="dp_19">19dp</dimen>
+    <dimen name="dp_2">2dp</dimen>
+    <dimen name="dp_20">20dp</dimen>
+    <dimen name="dp_21">21dp</dimen>
+    <dimen name="dp_22">22dp</dimen>
+    <dimen name="dp_220">220dp</dimen>
+    <dimen name="dp_23">23dp</dimen>
+    <dimen name="dp_24">24dp</dimen>
+    <dimen name="dp_25">25dp</dimen>
+    <dimen name="dp_26">26dp</dimen>
+    <dimen name="dp_27">27dp</dimen>
+    <dimen name="dp_28">28dp</dimen>
+    <dimen name="dp_29">29dp</dimen>
+    <dimen name="dp_3">3dp</dimen>
+    <dimen name="dp_30">30dp</dimen>
+    <dimen name="dp_31">31dp</dimen>
+    <dimen name="dp_32">32dp</dimen>
+    <dimen name="dp_33">33dp</dimen>
+    <dimen name="dp_34">34dp</dimen>
+    <dimen name="dp_35">35dp</dimen>
+    <dimen name="dp_36">36dp</dimen>
+    <dimen name="dp_37">37dp</dimen>
+    <dimen name="dp_38">38dp</dimen>
+    <dimen name="dp_39">39dp</dimen>
+    <dimen name="dp_4">4dp</dimen>
+    <dimen name="dp_40">40dp</dimen>
+    <dimen name="dp_41">41dp</dimen>
+    <dimen name="dp_42">42dp</dimen>
+    <dimen name="dp_43">43dp</dimen>
+    <dimen name="dp_44">44dp</dimen>
+    <dimen name="dp_45">45dp</dimen>
+    <dimen name="dp_46">46dp</dimen>
+    <dimen name="dp_47">47dp</dimen>
+    <dimen name="dp_48">48dp</dimen>
+    <dimen name="dp_49">49dp</dimen>
+    <dimen name="dp_5">5dp</dimen>
+    <dimen name="dp_50">50dp</dimen>
+    <dimen name="dp_51">51dp</dimen>
+    <dimen name="dp_52">52dp</dimen>
+    <dimen name="dp_53">53dp</dimen>
+    <dimen name="dp_54">54dp</dimen>
+    <dimen name="dp_55">55dp</dimen>
+    <dimen name="dp_56">56dp</dimen>
+    <dimen name="dp_57">57dp</dimen>
+    <dimen name="dp_58">58dp</dimen>
+    <dimen name="dp_59">59dp</dimen>
+    <dimen name="dp_6">6dp</dimen>
+    <dimen name="dp_60">60dp</dimen>
+    <dimen name="dp_61">61dp</dimen>
+    <dimen name="dp_62">62dp</dimen>
+    <dimen name="dp_63">63dp</dimen>
+    <dimen name="dp_64">64dp</dimen>
+    <dimen name="dp_65">65dp</dimen>
+    <dimen name="dp_66">66dp</dimen>
+    <dimen name="dp_67">67dp</dimen>
+    <dimen name="dp_68">68dp</dimen>
+    <dimen name="dp_69">69dp</dimen>
+    <dimen name="dp_7">7dp</dimen>
+    <dimen name="dp_70">70dp</dimen>
+    <dimen name="dp_71">71dp</dimen>
+    <dimen name="dp_72">72dp</dimen>
+    <dimen name="dp_73">73dp</dimen>
+    <dimen name="dp_8">8dp</dimen>
+    <dimen name="dp_9">9dp</dimen>
+    <dimen name="drop_down_list_footer_button_height">48dp</dimen>
+    <dimen name="drop_down_list_footer_button_margin_left">8dp</dimen>
+    <dimen name="drop_down_list_footer_progress_bar_height">36dp</dimen>
+    <dimen name="drop_down_list_header_padding_bottom">15dp</dimen>
+    <dimen name="drop_down_list_header_padding_top">12dp</dimen>
+    <dimen name="drop_down_list_header_progress_bar_height">36dp</dimen>
+    <dimen name="drop_down_list_header_release_min_distance">20dp</dimen>
+    <dimen name="rippleRadius">64dp</dimen>
+    <dimen name="rippleStrokeWidth">2dp</dimen>
+    <dimen name="sp_22">22sp</dimen>
+    <drawable name="file_list_item_normal">#ff787470</drawable>
+    <drawable name="file_list_item_press">#ff5b544d</drawable>
+    <item name="about_version_code" type="id">false</item>
+    <item name="auto_focus" type="id"/>
+    <item name="decode" type="id"/>
+    <item name="decode_failed" type="id"/>
+    <item name="decode_succeeded" type="id"/>
+    <item name="encode_failed" type="id"/>
+    <item name="encode_succeeded" type="id"/>
+    <item name="gridview" type="id"/>
+    <item name="launch_product_query" type="id"/>
+    <item name="quit" type="id"/>
+    <item name="restart_preview" type="id"/>
+    <item name="return_scan_result" type="id"/>
+    <item name="search_book_contents_failed" type="id"/>
+    <item name="search_book_contents_succeeded" type="id"/>
+    <item name="split" type="id">false</item>
+    <item name="webview" type="id"/>
+    <string name="Quickmark_text">二维码扫描分享</string>
+    <string name="action_about">关于</string>
+    <string name="action_loadlist">刷新</string>
+    <string name="action_logout">注销</string>
+    <string name="action_scan">扫描分享</string>
+    <string name="action_settings">设置</string>
+    <string name="action_sign_in">登录</string>
+    <string name="action_sign_in_short">登录</string>
+    <string name="album">从相册中选择</string>
+    <string name="alipay">支付宝好友</string>
+    <string name="alipay_client_inavailable">目前您的支付宝版本过低或未安装，需要安装支付宝才能使用</string>
+    <string name="app_name">多朋家居</string>
+    <string name="baidutieba">百度贴吧</string>
+    <string name="baidutieba_client_inavailable">目前您的百度贴吧版本过低或未安装，需要安装百度贴吧才能使用</string>
+    <string name="bluetooth">蓝牙</string>
+    <string name="btnConfirmTitle">开始配置</string>
+    <string name="cancel">取消</string>
+    <string name="cube_ptr_hours_ago"> hours ago</string>
+    <string name="cube_ptr_last_update">last update: </string>
+    <string name="cube_ptr_minutes_ago"> minutes ago</string>
+    <string name="cube_ptr_pull_down">Pull Down</string>
+    <string name="cube_ptr_pull_down_to_refresh">Pull Down to Refresh</string>
+    <string name="cube_ptr_refresh_complete">Updated.</string>
+    <string name="cube_ptr_refreshing">Updating...</string>
+    <string name="cube_ptr_release_to_refresh">Release To Refresh</string>
+    <string name="cube_ptr_seconds_ago"> seconds ago</string>
+    <string name="dev_share_text">设备分享</string>
+    <string name="devshare">设备分享</string>
+    <string name="douban">豆瓣</string>
+    <string name="drop_down_list_footer_default_text">下拉可以刷新</string>
+    <string name="dropbox">Dropbox</string>
+    <string name="email">邮件</string>
+    <string name="error_field_required">不能为空</string>
+    <string name="error_incorrect_password">密码错误</string>
+    <string name="error_invalid_email">帐号无效</string>
+    <string name="error_invalid_password">密码太短</string>
+    <string name="evernote">印象笔记</string>
+    <string name="facebook">Facebook</string>
+    <string name="facebookmessenger">Facebook Messenger</string>
+    <string name="faclity_client_text">连接设备</string>
+    <string name="faclity_select_cb1">英联智能插座</string>
+    <string name="faclity_select_cb2">英联智能摄影机</string>
+    <string name="faclity_select_cb3">水立方净水器</string>
+    <string name="faclity_select_cb4">智能净水器</string>
+    <string name="faclity_select_cb5">智能空气净化器</string>
+    <string name="faclity_select_text">预览</string>
+    <string name="factliity">我的设备</string>
+    <string name="factor_user">设备使用者</string>
+    <string name="find_new_dev">发现新设备</string>
+    <string name="finish">完成</string>
+    <string name="flickr">Flickr</string>
+    <string name="foursquare">FourSquare</string>
+    <string name="google_plus_client_inavailable">Google+ 版本过低或者没有安装，需要升级或安装Google+才能使用！</string>
+    <string name="googleplus">Google+</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="hint_operator_name">输入用户账号</string>
+    <string name="image_content">图片</string>
+    <string name="instagram">Instagram</string>
+    <string name="instagram_client_inavailable">Instagram版本过低或者没有安装，需要升级或安装Instagram才能使用！</string>
+    <string name="instapager_email_or_password_incorrect">Email或密码不正确</string>
+    <string formatted="false" name="instapager_login_html">
+&lt;!DOCTYPE html>
+&lt;html>
+&lt;head>
+&lt;meta content=\"text/html; charset=utf-8\" http-equiv=\"Content-Type\">
+&lt;meta content=\"width=device-width,minimum-scale=1,maximum-scale=1,initial-scale=1,user-scalable=no\" id=\"viewport\" name=\"viewport\">
+&lt;meta content=\"yes\" name=\"apple-mobile-web-app-capable\">
+&lt;title>%s&lt;/title>
+&lt;style type=\"text/css\">
+body{margin:0;padding:0}
+.inputstyle {
+    -webkit-tap-highlight-color:rgba(255,255,255,0);
+    width:100%%;
+    height:44px;
+    color:#000;
+    background:0;
+    border:0;
+    font-size:16px;
+    outline: none;
+    -webkit-appearance:none
+}
+
+.btn {
+    width:90%%;
+    height:44px;
+    line-height:44px;
+    background:#A0C035;
+    border:0;
+    border-radius:4px;
+    color:#fff;
+    font-size:16px;
+    text-align:center;
+    margin-top:15px;
+    display:block
+}
+.btn:disabled {
+    background: #dddddd;
+}
+.error {
+    color:red;
+}
+&lt;/style>
+&lt;/head>
+
+&lt;body>
+&lt;script type=\"text/javascript\">
+function login(form){
+    var u=form[\"u\"].value,p=form[\"p\"].value;
+    if(!u || !p)
+        return false;
+    form[\"s\"].disabled = true;
+    return true;
+}
+&lt;/script>
+&lt;form style=\"margin-top:45px;\" action=\"%s\" metho=\"get\" onsubmit=\"return login(this);\">
+%s
+&lt;div style=\"padding-left:15px;border-top:1px solid #E3E3E5;border-bottom:1px solid #E3E3E5;\">
+ &lt;input type=\"hidden\" name=\"ID_SIGN\" value=\"OWELJSFPWECSFEW\"/>
+ &lt;input class=\"inputstyle\" id=\"u\" name=\"u\" type=\"text\" value=\"%s\" placeholder=\"%s\" style=\"border-bottom:1px solid #E3E3E5;\"/>
+ &lt;input class=\"inputstyle\" id=\"p\" name=\"p\" type=\"password\" placeholder=\"%s\"/>
+&lt;/div>
+&lt;p>&lt;input style=\"margin:0 auto;\" type=\"submit\" name=\"s\" value=\"  %s  \" class=\"btn\"/>&lt;/p>
+&lt;/form>
+&lt;/body>
+&lt;/html>
+</string>
+    <string name="instapaper">Instapaper</string>
+    <string name="instapaper_email">邮箱</string>
+    <string name="instapaper_login">登录</string>
+    <string name="instapaper_logining">登录中…</string>
+    <string name="instapaper_pwd">密码</string>
+    <string name="kaixin">开心网</string>
+    <string name="kakaostory">KakaoStory</string>
+    <string name="kakaostory_client_inavailable">目前您的KakaoStory版本过低或未安装，需要安装KakaoStory才能使用</string>
+    <string name="kakaotalk">KakaoTalk</string>
+    <string name="kakaotalk_client_inavailable">目前您的KakaoTalk版本过低或未安装，需要安装KakaoTalk才能使用</string>
+    <string name="laiwang">来往</string>
+    <string name="laiwang_client_inavailable">目前您的来往版本过低或未安装，需要安装来往才能使用</string>
+    <string name="laiwangmoments">来往动态</string>
+    <string name="line">Line</string>
+    <string name="line_client_inavailable">目前您的Line版本过低或未安装，需要安装Line才能使用</string>
+    <string name="linkedin">领英</string>
+    <string name="list_friends">%s的朋友</string>
+    <string name="login_phone">手机号</string>
+    <string name="login_txt">登录</string>
+    <string name="main_find">发现</string>
+    <string name="main_me">个人</string>
+    <string name="main_me_to">个人中心</string>
+    <string name="main_seek">设备</string>
+    <string name="mingdao">明道</string>
+    <string name="mingdao_share_content">网页分享</string>
+    <string name="multi_share">图文分享</string>
+    <string name="neteasemicroblog">网易微博</string>
+    <string name="not_updated_yet">暂未更新过</string>
+    <string name="personage_gr_add_home">我的家人</string>
+    <string name="personage_gr_bx">保修情况</string>
+    <string name="personage_gr_fk">反馈</string>
+    <string name="personage_gr_fx">设备共享</string>
+    <string name="personage_gr_gy">关于</string>
+    <string name="personage_gr_message">消息中心</string>
+    <string name="personage_gr_share">设备分享</string>
+    <string name="personage_gr_update">检查更新</string>
+    <string name="personage_gr_update_c">固件升级</string>
+    <string name="personage_gr_user_txt">用户中心</string>
+    <string name="photograph">拍照</string>
+    <string name="pinterest">Pinterest</string>
+    <string name="pinterest_client_inavailable">Pinterest版本过低或者没有安装，需要升级或安装Pinterest才能使用！</string>
+    <string name="pocket">Pocket</string>
+    <string name="pr_msg_delet_false_btne">取消</string>
+    <string name="pr_msg_delete">是否删除所有记录？</string>
+    <string name="pr_msg_delete_true_btn">确定</string>
+    <string name="prompt_email">帐号</string>
+    <string name="prompt_password">密码</string>
+    <string name="pull_to_refresh">下拉刷新</string>
+    <string name="pwd">密码</string>
+    <string name="qq">QQ</string>
+    <string name="qq_client_inavailable">QQ 版本过低或者没有安装，需要升级或安装QQ才能使用！</string>
+    <string name="qzone">QQ空间</string>
+    <string name="refreshing">刷新中…</string>
+    <string name="register">注册账号</string>
+    <string name="release_to_refresh">松开刷新</string>
+    <string name="renren">人人网</string>
+    <string name="restpwd_txt">找回密码</string>
+    <string name="restpwd_txt_wang">忘记密码？</string>
+    <string name="scan_text"/>
+    <string name="select_a_friend">请选择一个朋友</string>
+    <string name="select_one_plat_at_least">请选择一个目标平台</string>
+    <string name="send_message_txt">发送验证码</string>
+    <string name="shake2share">摇晃手机！</string>
+    <string name="share">多朋家居分享</string>
+    <string name="share_canceled">分享已取消</string>
+    <string name="share_completed">分享成功</string>
+    <string name="share_failed">分享失败</string>
+    <string name="share_to">分享到</string>
+    <string name="share_to_baidutieba">分享到百度贴吧</string>
+    <string name="share_to_mingdao">分享到明道</string>
+    <string name="share_to_qq">分享到QQ</string>
+    <string name="share_to_qzone">分享到QQ空间</string>
+    <string name="share_to_qzone_default">来自%s的分享</string>
+    <string name="sharing">分享操作正在后台进</string>
+    <string name="shortmessage">信息</string>
+    <string name="sinaweibo">新浪微博</string>
+    <string name="sohumicroblog">搜狐微博</string>
+    <string name="sohusuishenkan">搜狐随身看</string>
+    <string name="spinnerTaskResultCountTitle">任务结果数</string>
+    <string name="ssdk_recomm_app_friends_title">您有&lt;font color="#ed4456">%1$s&lt;/font>位好友正在使用这个应用</string>
+    <string name="ssdk_recomm_click_for_more">点击加载更多</string>
+    <string name="ssdk_recomm_close">关闭</string>
+    <string name="ssdk_recomm_download">立即下载</string>
+    <string name="ssdk_recomm_friends_sharing">他们正在分享</string>
+    <string name="ssdk_recomm_share_before_date">%s天前</string>
+    <string name="ssdk_recomm_share_before_hour">%s小时前</string>
+    <string name="ssdk_recomm_share_before_minute">%s分钟前 </string>
+    <string name="ssdk_recomm_share_before_second">%s秒前 </string>
+    <string name="ssdk_recomm_share_completed">分享成功</string>
+    <string name="ssdk_recomm_share_failed">分享失败</string>
+    <string name="ssdk_recomm_share_msg_link">网页链接 </string>
+    <string name="ssdk_recomm_share_share_to_another_plats">分享到更多平台</string>
+    <string name="ssdk_recomm_share_to">分享至 %s </string>
+    <string name="ssdk_recomm_today_news">今日新闻</string>
+    <string name="ssdk_recomm_view_count">%s人看过</string>
+    <string name="ssdk_recomm_webpage_def_title">网页</string>
+    <string name="start_text_yinling1">英凌</string>
+    <string name="start_text_yinling2">*</string>
+    <string name="start_text_yinling3">在联</string>
+    <string name="switchIsSsidHiddenTitle">WIFI名称是否隐藏</string>
+    <string name="tencentweibo">腾讯微博</string>
+    <string name="time_error">时间有问题</string>
+    <string name="title_activity__repairs_">_repairs_Activity</string>
+    <string name="title_activity_about">关于</string>
+    <string name="title_activity_add_dev_step1">配置设备</string>
+    <string name="title_activity_air_a">AirAActivity</string>
+    <string name="title_activity_bts_ctrl">电池测试仪</string>
+    <string name="title_activity_debug_setting">调试选项</string>
+    <string name="title_activity_delete_dialogs">DeleteDialogsActivity</string>
+    <string name="title_activity_deploy">DeployActivity</string>
+    <string name="title_activity_dev_list">设备列表</string>
+    <string name="title_activity_dev_share">DevShareActivity</string>
+    <string name="title_activity_esptouch">EsptouchActivity</string>
+    <string name="title_activity_feedback">反馈</string>
+    <string name="title_activity_filter_details_">Filter_details_Activity</string>
+    <string name="title_activity_filter_history_">Filter_history_Activity</string>
+    <string name="title_activity_ledctrl">彩灯控制</string>
+    <string name="title_activity_link_dev">LinkDevActivity</string>
+    <string name="title_activity_login">登录</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_new_dev">新设备</string>
+    <string name="title_activity_quickmark">QuickmarkActivity</string>
+    <string name="title_activity_register">注册</string>
+    <string name="title_activity_repair__list_">Repair_List_Activity</string>
+    <string name="title_activity_repair_schedule">Repair_scheduleActivity</string>
+    <string name="title_activity_rest_pwd">RestPwdActivity</string>
+    <string name="title_activity_scan_result">扫描结果</string>
+    <string name="title_activity_setting">设置</string>
+    <string name="title_activity_share_dev">ShareDevActivity</string>
+    <string name="title_activity_share_dev_user">ShareDevUserActivity</string>
+    <string name="title_activity_showadlog">ShowadlogActivity</string>
+    <string name="title_activity_update_pwd">UpdatePwdActivity</string>
+    <string name="title_activity_upgrade__water_">Upgrade_Water_Activity</string>
+    <string name="title_activity_user_center">用户中心</string>
+    <string name="title_activity_user_message">UserMessageActivity</string>
+    <string name="title_activity_water_seting">Water_setingActivity</string>
+    <string name="title_activity_wifi">Wifi列表</string>
+    <string name="title_activity_wifi_list">Wifi列表</string>
+    <string name="title_activity_xulik__water">Xulik_WaterActivity</string>
+    <string name="tumblr">Tumblr</string>
+    <string name="tvApSsidTitle">WIFI名称: </string>
+    <string name="tvPasswordTitle">WIFI密码: </string>
+    <string name="twitter">Twitter</string>
+    <string name="updateAvatar_true">修改头像成功</string>
+    <string name="update_pwd_tilte">修改密码</string>
+    <string name="updated_at">上次更新于%1$s前</string>
+    <string name="updated_just_now">刚刚更新</string>
+    <string name="upgrade_text">此设备的固件已是最新版本</string>
+    <string name="use_login_button">请改用“登录”按钮</string>
+    <string name="vkontakte">VK</string>
+    <string name="website">http://www.mob.com</string>
+    <string name="wechat">微信好友</string>
+    <string name="wechat_client_inavailable">目前您的微信版本过低或未安装微信，需要安装微信才能使用</string>
+    <string name="wechatfavorite">微信收藏</string>
+    <string name="wechatmoments">微信朋友圈</string>
+    <string name="weibo_oauth_regiseter">应用授权</string>
+    <string name="weibo_upload_content">分享图片</string>
+    <string name="whatsapp">WhatsApp</string>
+    <string name="whatsapp_client_inavailable">目前您的WhatsApp版本过低或未安装，需要安装WhatsApp才能使用</string>
+    <string name="yixin">易信</string>
+    <string name="yixin_client_inavailable">目前您的易信版本过低或未安装，需要安装易信才能使用</string>
+    <string name="yixinmoments">易信朋友圈</string>
+    <string name="youdao">有道云笔记</string>
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    <style name="Widget.SeekBar.Normal" parent="@android:style/Widget.SeekBar">
+        <item name="android:maxHeight">8.0dip</item>
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:indeterminateDrawable">@android:drawable/progress_indeterminate_horizontal</item>
+        <item name="android:progressDrawable">@drawable/seekbar_horizontal</item>
+        <item name="android:minHeight">8.0dip</item>
+        <item name="android:thumb">@drawable/seek_thumb</item>
+        <item name="android:thumbOffset">10.0dip</item>
+    </style>
+    <style name="air.NTC.norml" parent="@android:style/Widget.SeekBar">
+        <item name="android:maxHeight">8.0dip</item>
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:indeterminateDrawable">@android:drawable/progress_indeterminate_horizontal</item>
+        <item name="android:progressDrawable">@drawable/seekbar_air</item>
+        <item name="android:minHeight">8.0dip</item>
+        <item name="android:thumb">@drawable/sd_bj</item>
+        <item name="android:thumbOffset">10.0dip</item>
+    </style>
+    <style name="drop_down_list_footer_font_style">
+        <item name="android:textColor">@color/drop_down_list_footer_font_color</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+    </style>
+    <style name="drop_down_list_footer_progress_bar_style">
+        <item name="android:minHeight">@dimen/drop_down_list_footer_progress_bar_height</item>
+        <item name="android:maxHeight">@dimen/drop_down_list_footer_progress_bar_height</item>
+    </style>
+    <style name="drop_down_list_header_font_style">
+        <item name="android:textColor">@color/drop_down_list_header_font_color</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+    </style>
+    <style name="drop_down_list_header_progress_bar_style">
+        <item name="android:minHeight">@dimen/drop_down_list_header_progress_bar_height</item>
+        <item name="android:maxHeight">@dimen/drop_down_list_header_progress_bar_height</item>
+    </style>
+    <style name="drop_down_list_header_second_font_style">
+        <item name="android:textColor">@color/drop_down_list_header_second_font_color</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+    </style>
+</resources>
