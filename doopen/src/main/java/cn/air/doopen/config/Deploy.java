@@ -4,11 +4,11 @@ public interface Deploy {
 	///空气净化器设备类型；
 	public static  String air_dev_type="HO7611";
 	//空气净化器设备名称；
-	public static  String air_dev_name="多朋空气净化器";
+	public static  String air_dev_name="空气净化器";
 	///净水器类型；
 	public static  String water_dev_type="INL110";
 	//净水器设备名称；
-	public static  String water_dev_name="水立方净水器";
+	public static  String water_dev_name="净水器";
 	///智能演示板类型；
 	public static  String demo_dev_type="INL007";
 	//智能演示板名称；
