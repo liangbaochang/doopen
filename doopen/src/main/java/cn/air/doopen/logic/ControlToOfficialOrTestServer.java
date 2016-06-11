@@ -64,65 +64,47 @@ public class ControlToOfficialOrTestServer {
 
 	public String socket_url(){
 		if (code_service==true) {
-			//正式服务器socket地址；`
-			return "120.24.84.21";
+			return "IP";
 		}else{
 			//	测试服务器地址socket地址；
-			return "121.40.104.149";
+			return "IP";
 		}
 	}
 	public String http_url(){
 		if (code_service==true) {
 			//正式服务器socket地址；`
-			return "https://iot.inlinkage.com/server/iot/api/app.php";
+			return "IP";
 		}else{
 			//	测试服务器地址socket地址；
-			return "https://iotdemo.inlinkage.com/server/iot/api/app.php";
+			return "IP";
 		}
 	}
 	public String  update_app(){
 		if (code_service==true) {
 			//正式服务器socket地址；
-			return "http://iot.inlinkage.com/server/iot/update/getapp.php?token=";
+			return "IP";
 		}else{
 			//	测试服务器地址socket地址；
-			return "http://iotdemo.inlinkage.com/server/iot/update/getapp.php?token=";
+			return "IP";
 		}
 	}
 	public String add_http_img_url(){
 		if (code_service==true) {
 			//正式服务器socket地址；`
-			return "http://iot.inlinkage.com/server/iot/api/uploadhead.php";
+			return "IP";
 		}else{
 			//	测试服务器地址socket地址；
-			return "http://iotdemo.inlinkage.com/server/iot/api/uploadhead.php";
+			return "IP";
 		}
 	}
 	public String Avatar_Downloader_url(String token){
 		if (code_service==true) {
 			//正式服务器socket地址；`
-			return "http://iot.inlinkage.com/server/iot/api/gethead.php?token="+token;
+			return "IP";
 		}else{
 			//	测试服务器地址socket地址；
-			return "http://iotdemo.inlinkage.com/server/iot/api/gethead.php?token="+token;
+			return "IP";
 		}
 	}
-	//	final String socket_url="120.24.84.21";
-	//	//正式http协议ip地址；
-	//	final String http_url="https://iot.inlinkage.com/server/iot/api/app.php";
-	//	//	更新app版本；此为正式的；
-	//	final String update_app="http://iot.inlinkage.com/server/iot/update/getapp.php?token=";
-	//	//	/上传图片地址正式地址；
-	//	String add_http_img_url="http://iot.inlinkage.com/server/iot/api/uploadhead.php";
-	//	//	测试服务器地址socket地址；
-	//	public static final String socket_url="121.40.104.149";
-	//	//	测试服务器ip地址；
-	//	public static  String http_url="https://iotdemo.inlinkage.com/server/iot/api/app.php";
-	//	//更新app版本；此为测试的；
-	//	public static final String update_app="http://iotdemo.inlinkage.com/server/iot/update/getapp.php?token=";
-	//	///上传图片地址测试地址；
-	//	public static  String add_http_img_url="http://iotdemo.inlinkage.com/server/iot/api/uploadhead.php";
 
-	//	/上传图片
-	//	public static  String add_http_img_url="http://ioserver.inlinkage.com/server/iot/api/uploadhead.php";
 }
